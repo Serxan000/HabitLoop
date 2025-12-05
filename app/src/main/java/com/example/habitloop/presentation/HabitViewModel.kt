@@ -19,7 +19,6 @@ class HabitViewModel @Inject constructor(
     val habits: StateFlow<List<Habit>> = repo.getHabits()
         .stateIn(viewModelScope, SharingStarted.WhileSubscribed(), emptyList())
 
-    /** Yeni habit əlavə etmək */
     fun addHabit(title: String, difficulty: String) = viewModelScope.launch {
         val habit = Habit(
             id = 0,
@@ -30,23 +29,12 @@ class HabitViewModel @Inject constructor(
         repo.insertHabit(habit)
     }
 
-    /** Progress +1 (max 21) */
-    fun increaseProgress(habit: Habit) = viewModelScope.launch {
-        if (habit.progress < 21) {
-            val updated = habit.copy(progress = habit.progress + 1)
-            repo.updateHabit(updated)
-        }
+    fun updateHabitProgress(habit: Habit, day: Int) = viewModelScope.launch {
+        val newProgress = if (day > habit.progress) day else habit.progress
+        val updatedHabit = habit.copy(progress = newProgress)
+        repo.updateHabit(updatedHabit)
     }
 
-    /** Progress -1 (optional) */
-    fun decreaseProgress(habit: Habit) = viewModelScope.launch {
-        if (habit.progress > 0) {
-            val updated = habit.copy(progress = habit.progress - 1)
-            repo.updateHabit(updated)
-        }
-    }
-
-    /** Habit silmə funksiyası */
     fun deleteHabit(habit: Habit) = viewModelScope.launch {
         repo.deleteHabit(habit)
     }
