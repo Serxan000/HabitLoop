@@ -1,6 +1,7 @@
 package com.example.habitloop.presentation.screens
 
 import androidx.compose.foundation.layout.*
+import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.selection.selectable
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
@@ -39,7 +40,9 @@ fun AddHabitDialog(
                             .selectable(
                                 selected = difficulty == option,
                                 onClick = { difficulty = option }
-                            )
+                            ),
+                        verticalAlignment = Alignment.CenterVertically
+
                     ) {
                         RadioButton(
                             selected = difficulty == option,

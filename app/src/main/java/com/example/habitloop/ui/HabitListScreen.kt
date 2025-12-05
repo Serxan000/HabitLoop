@@ -10,6 +10,7 @@ import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.sp
 import androidx.hilt.navigation.compose.hiltViewModel
 import com.example.habitloop.presentation.HabitViewModel
 import com.example.habitloop.ui.HabitCard
@@ -42,10 +43,11 @@ fun HabitListScreen(
                 contentAlignment = Alignment.Center
             ) {
                 Text(
-                    text = "Hələ heç bir vərdişiniz yoxdur. Başlamaq üçün '+' düyməsinə basın!",
+                    text = "There is no habit",
                     style = MaterialTheme.typography.bodyLarge,
+                    fontSize = 40.sp,
                     color = MaterialTheme.colorScheme.onSurfaceVariant,
-                    modifier = Modifier.padding(24.dp)
+                    modifier = Modifier.padding(40.dp)
                 )
             }
         }
@@ -70,7 +72,6 @@ fun HabitListScreen(
                         }
                     }
                 )
-
 
             }
         }
