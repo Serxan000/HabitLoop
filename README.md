@@ -15,8 +15,8 @@ With HabitLoop, you can:
 
 ## Daily Progress
 - [2025-12-07] Implemented AddHabitDialog
--  [2025-12-08] Added progress bar for habits
--  - [2025-12-09] Implemented daily checkbox for habit completion
+- [2025-12-08] Added progress bar for habits
+- [2025-12-09] Implemented daily checkbox for habit completion
 
 ## Tech Stack
 - **Kotlin**  
