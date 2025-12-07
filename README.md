@@ -13,6 +13,9 @@ With HabitLoop, you can:
 - **Progress indicators** to see your habit streak  
 - **Clean and simple UI** with Jetpack Compose  
 
+## Daily Progress
+- [2025-12-07] Implemented AddHabitDialog
+
 ## Tech Stack
 - **Kotlin**  
 - **Jetpack Compose** for UI  
@@ -25,7 +28,4 @@ With HabitLoop, you can:
 3. Build and run the app on an emulator or device  
 
 ## Contribution
-Feel free to contribute by creating issues, suggesting features, or submitting pull requests.  
-
----
-
+Feel free to contribute by creating issues, suggesting features, or submitting pull requests.
