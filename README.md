@@ -21,6 +21,7 @@ With HabitLoop, you can:
 * [2025-12-08] Added progress bar for habits
 * [2025-12-09] Implemented daily checkbox for habit completion
 * [2025-12-10] Added new progress update entry
+* [2025-12-11] Integrated popup with animation for completed habits
 
 ## Tech Stack
 
