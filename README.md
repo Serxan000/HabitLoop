@@ -16,12 +16,11 @@ With HabitLoop, you can:
 * **Clean and simple UI** with Jetpack Compose
 
 ## Daily Progress
-
-* [2025-12-07] Implemented AddHabitDialog
-* [2025-12-08] Added progress bar for habits
-* [2025-12-09] Implemented daily checkbox for habit completion
-* [2025-12-10] Added new progress update entry
-* [2025-12-11] Integrated popup with animation for completed habits
+1.Implemented AddHabitDialog
+2.Added progress bar for habits
+3.Implemented daily checkbox for habit completion
+4.Added new progress update entry
+5.Integrated popup with animation for completed habits
 
 ## Tech Stack
 
