@@ -25,6 +25,7 @@ With HabitLoop, you can:
 7.Animated "Task Completed" icon for each finished habit
 8.Ensured progress persists on screen rotation and app restart
 9. Implemented full-screen success popup with smooth fade-in animation when the final daily checkbox is completed
+10. Added daily habit reminder notifications using Notification Channel + AlarmManager
 
 ## Tech Stack
 
